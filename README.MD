@@ -7,9 +7,9 @@
 1. 从Canal Server接收数据，解析为SQL语句
     - 兼容DDL及DML操作
     - 记录断点来解决重复消费
-    - 断线重连
+    - 对Canal Server的断线重连
 2. 将SQL语句同步至MySQL服务执行
-    - 包含执行、错误日志
+    - 输出执行、错误日志
 
 ## 配置
 1. 修改conf文件中CANAL_SERVER及MYSQL_SERVER配置
@@ -21,4 +21,5 @@
 
 2. 启动Canal Server
 
-3. 执行 `python3 canal_adapter.py`
+3. 运行适配器
+    - 执行 `python3 canal_adapter.py`
